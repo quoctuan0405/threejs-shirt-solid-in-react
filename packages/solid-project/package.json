@@ -1,6 +1,5 @@
 {
 	"name": "solid-project",
-	"homepage": "https://quoctuan0405.github.io/threejs-shirt-solid-in-react/",
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
