@@ -1,0 +1,44 @@
+{
+  "name": "react-shirt",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "preview": "rsbuild dev"
+  },
+  "devDependencies": {
+    "@rsbuild/plugin-react": "^1.1.0",
+    "@rslib/core": "^0.5.1",
+    "@types/react": "^19.0.9",
+    "@types/react-dom": "^19.0.3",
+    "react": "^19.0.0",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.2",
+    "@react-three/fiber": "^9.0.4",
+    "@rsbuild/core": "^1.2.8",
+    "@types/three": "^0.173.0",
+    "maath": "^0.10.8",
+    "three": "^0.173.0",
+    "valtio": "^2.1.3"
+  }
+}

@@ -1,0 +1,4 @@
+packages:
+  - "packages/solid-project"
+  - "packages/react-shirt"
+  - "packages/react-flow"

@@ -1,0 +1,40 @@
+{
+  "name": "react-flow",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "preview": "rsbuild dev"
+  },
+  "devDependencies": {
+    "@rsbuild/plugin-react": "^1.1.1",
+    "@rslib/core": "^0.5.2",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.3",
+    "react": "^19.0.0",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "dependencies": {
+    "@rsbuild/core": "^1.2.8",
+    "@tailwindcss/postcss": "^4.0.8",
+    "@tanstack/react-ranger": "^0.0.4",
+    "@xyflow/react": "^12.4.4",
+    "tailwindcss": "^4.0.8"
+  }
+}

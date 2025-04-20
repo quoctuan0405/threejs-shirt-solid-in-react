@@ -1,0 +1,32 @@
+{
+	"name": "solid-project",
+	"homepage": "https://quoctuan0405.github.io/threejs-shirt-solid-in-react/",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "rsbuild build",
+		"dev": "rsbuild dev",
+		"preview": "rsbuild preview"
+	},
+	"dependencies": {
+		"@jaames/iro": "^5.5.2",
+		"clsx": "^2.1.1",
+		"react-shirt": "workspace:*",
+		"react-flow": "workspace:*",
+		"solid-icons": "^1.1.0",
+		"solid-js": "^1.9.4",
+		"solid-motionone": "^1.0.3",
+		"tailwind-merge": "^3.0.2"
+	},
+	"devDependencies": {
+		"@rsbuild/core": "^1.2.8",
+		"@rsbuild/plugin-babel": "^1.0.3",
+		"@rsbuild/plugin-solid": "^1.0.4",
+		"@tailwindcss/postcss": "^4.0.8",
+		"postcss": "^8.5.3",
+		"postcss-loader": "^8.1.1",
+		"tailwindcss": "^4.0.8",
+		"typescript": "^5.7.3"
+	}
+}

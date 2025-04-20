@@ -1,0 +1,22 @@
+{
+	"name": "threejs-shirt-solid-in-react",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "concurrently \"pnpm run dev-react-shirt\" \"pnpm run dev-react-flow\" \"pnpm run dev-solid-project\"",
+		"dev-react-shirt": "pnpm --filter \"react-shirt\" run dev",
+		"dev-react-flow": "pnpm --filter \"react-flow\" run dev",
+		"dev-solid-project": "pnpm --filter \"solid-project\" run dev",
+		"react-shirt-preview": "pnpm --filter \"react-shirt\" run preview",
+		"react-flow-preview": "pnpm --filter \"react-flow\" run preview",
+		"build-react-shirt": "pnpm --filter \"react-shirt\" run build",
+		"build-react-flow": "pnpm --filter \"react-flow\" run build",
+		"build-solid-project": "pnpm --filter \"solid-project\" run build",
+		"predeploy": "pnpm run build-react-shirt && pnpm run build-react-flow && pnpm run build-solid-project",
+		"deploy": "gh-pages -d solid-project/dist"
+	},
+	"dependencies": {
+		"concurrently": "^9.1.2",
+		"gh-pages": "^6.3.0"
+	}
+}
