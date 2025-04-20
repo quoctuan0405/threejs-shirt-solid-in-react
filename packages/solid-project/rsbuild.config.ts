@@ -4,7 +4,13 @@ import { pluginSolid } from "@rsbuild/plugin-solid";
 
 export default defineConfig({
 	server: {
-		base: "/threejs-shirt-solid-in-react",
+		base:
+			process.env.NODE_ENV === "development"
+				? "/"
+				: "/threejs-shirt-solid-in-react",
+	},
+	html: {
+		title: "ThreeJS shirt Solid in React",
 	},
 	plugins: [
 		pluginBabel({

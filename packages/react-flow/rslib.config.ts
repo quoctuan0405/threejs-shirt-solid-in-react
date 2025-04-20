@@ -20,5 +20,11 @@ export default defineConfig({
 	output: {
 		target: "web",
 	},
+	server: {
+		base:
+			process.env.NODE_ENV === "development"
+				? "/"
+				: "/threejs-shirt-solid-in-react",
+	},
 	plugins: [pluginReact()],
 });

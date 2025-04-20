@@ -13,8 +13,9 @@
 		"build-react-shirt": "pnpm --filter \"react-shirt\" run build",
 		"build-react-flow": "pnpm --filter \"react-flow\" run build",
 		"build-solid-project": "pnpm --filter \"solid-project\" run build",
-		"predeploy": "pnpm run build-react-shirt && pnpm run build-react-flow && pnpm run build-solid-project",
-		"deploy": "gh-pages -d solid-project/dist"
+		"build": "NODE_ENV=production pnpm run build-react-shirt && pnpm run build-react-flow && pnpm run build-solid-project",
+		"predeploy": "pnpm --shell-emulator build",
+		"deploy": "gh-pages -d packages/solid-project/dist"
 	},
 	"dependencies": {
 		"concurrently": "^9.1.2",

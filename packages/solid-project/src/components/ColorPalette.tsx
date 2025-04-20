@@ -19,7 +19,6 @@ export const ColorPalette: VoidComponent<Props> = (props) => {
 			if (iroContainer && !iroColorPicker) {
 				iroColorPicker = iro.ColorPicker(iroContainer, { color: store.color });
 				iroColorPicker.on("color:change", (color: iro.Color) => {
-					console.log(color.hexString);
 					setColor(color.hexString);
 				});
 			}

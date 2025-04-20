@@ -140,6 +140,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.0.8
         version: 4.0.8
+      '@types/node':
+        specifier: ^22.14.1
+        version: 22.14.1
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
@@ -746,6 +749,9 @@ packages:
 
   '@types/draco3d@1.4.10':
     resolution: {integrity: sha512-AX22jp8Y7wwaBgAixaSvkoG4M/+PlAcm3Qs4OW8yT9DM4xUpWKeFhLueTAyZF39pviAdcDdeJoACapiAceqNcw==}
+
+  '@types/node@22.14.1':
+    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
 
   '@types/offscreencanvas@2019.7.3':
     resolution: {integrity: sha512-ieXiYmgSRXUDeOntE1InxjWyvEelZGP63M+cGuquuRLuIKKT1osnkXjxev9B7d1nXSug5vpunx+gNlbVxMlC9A==}
@@ -1639,6 +1645,9 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
@@ -2409,6 +2418,10 @@ snapshots:
       '@types/d3-selection': 3.0.11
 
   '@types/draco3d@1.4.10': {}
+
+  '@types/node@22.14.1':
+    dependencies:
+      undici-types: 6.21.0
 
   '@types/offscreencanvas@2019.7.3': {}
 
@@ -3201,6 +3214,8 @@ snapshots:
       - react
 
   typescript@5.7.3: {}
+
+  undici-types@6.21.0: {}
 
   universalify@2.0.1: {}
 

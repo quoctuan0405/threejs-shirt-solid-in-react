@@ -11,8 +11,8 @@
 	"dependencies": {
 		"@jaames/iro": "^5.5.2",
 		"clsx": "^2.1.1",
-		"react-shirt": "workspace:*",
 		"react-flow": "workspace:*",
+		"react-shirt": "workspace:*",
 		"solid-icons": "^1.1.0",
 		"solid-js": "^1.9.4",
 		"solid-motionone": "^1.0.3",
@@ -23,6 +23,7 @@
 		"@rsbuild/plugin-babel": "^1.0.3",
 		"@rsbuild/plugin-solid": "^1.0.4",
 		"@tailwindcss/postcss": "^4.0.8",
+		"@types/node": "^22.14.1",
 		"postcss": "^8.5.3",
 		"postcss-loader": "^8.1.1",
 		"tailwindcss": "^4.0.8",
